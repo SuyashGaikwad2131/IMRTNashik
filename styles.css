@@ -29,6 +29,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .logo img {
@@ -40,31 +41,43 @@ header {
 .college-name h1 {
     font-size: 28px;
     margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .college-name h2 {
     font-size: 18px;
-    margin: 5px 0 0;
+    margin-top: 5px;
     color: #ddd;
+    font-weight: normal;
 }
 
-header nav {
-    margin-left: auto;
+nav {
+    margin-top: 10px;
 }
 
-header nav ul {
+.nav-menu {
+    display: flex;
     list-style: none;
+    justify-content: center;
+    padding: 0;
+    background-color: #444;
 }
 
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
+.nav-menu li {
+    margin: 0 15px;
 }
 
-header nav ul li a {
+.nav-menu li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 15px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 /* Hero Section */
